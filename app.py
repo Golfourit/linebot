@@ -72,6 +72,9 @@ def handle_message(event):
     elif '營業' in msg:
         message = TextSendMessage(text="😼ㄟ果肉蛋捲✖️The Naivest 🤤"+"\n"+"目前採線上商店經營，全天候都有營業呦！😼")
         line_bot_api.reply_message(event.reply_token, message)
+    elif '時間' in msg:
+        message = TextSendMessage(text="😼ㄟ果肉蛋捲✖️The Naivest 🤤"+"\n"+"目前採線上商店經營，全天候都有營業呦！😼")
+        line_bot_api.reply_message(event.reply_token, message)
     elif '刷卡' in msg:
         message = TextSendMessage(text="我們付款方式有郵匯跟現金付款！"+"\n"+"郵匯的話可以到我們的訂購單看匯款的帳號呦！"+"\n"+"🤤訂購單在這👇https://docs.google.com/forms/d/e/1FAIpQLScdbpfT8a5uaLut0o7O2kO_N0m9xnrv7O49gVBBdRwMNk16SA/viewform")
         line_bot_api.reply_message(event.reply_token, message)
@@ -99,9 +102,27 @@ def handle_message(event):
     elif '官網' in msg:
         message = TextSendMessage(text="(我們官網的連結在這！有興趣的都歡迎上來看看喔～～👏"+"\n"+"🔗🔗https://handmade-eggroll-3.jimdosite.com/")
         line_bot_api.reply_message(event.reply_token, message) 
+    elif '官方網網' in msg:
+        message = TextSendMessage(text="(我們官網的連結在這！有興趣的都歡迎上來看看喔～～👏"+"\n"+"🔗🔗https://handmade-eggroll-3.jimdosite.com/")
+        line_bot_api.reply_message(event.reply_token, message) 
     elif '吸菸' in msg:
-        message = TextSendMessage(text="(允丞✋️✋️ ，吸菸傷身又不環保(ah...)(ah...)"+"\n"+"不如來吃蛋捲吧！好吃😋又便宜！"+"\n"+"心動不如馬上行動！😝😝")
-        line_bot_api.reply_message(event.reply_token, message)    
+        message = TextSendMessage(text="(，吸菸傷身又不環保"+"\n"+"不如來吃蛋捲吧！好吃😋又便宜！"+"\n"+"心動不如馬上行動！😝😝")
+        line_bot_api.reply_message(event.reply_token, message)  
+     elif '掰' in msg:
+        message = TextSendMessage(text="(掰掰👋記得有空回來找我喔～～")
+        line_bot_api.reply_message(event.reply_token, message)  
+    elif '8' in msg:
+        message = TextSendMessage(text="(掰掰👋記得有空回來找我喔～～")
+        line_bot_api.reply_message(event.reply_token, message)  
+    elif 'bye' in msg:
+        message = TextSendMessage(text="(掰掰👋記得有空回來找我喔～～")
+        line_bot_api.reply_message(event.reply_token, message) 
+    elif '先走' in msg:
+        message = TextSendMessage(text="(掰掰👋記得有空回來找我喔～～")
+        line_bot_api.reply_message(event.reply_token, message) 
+    elif '再見' in msg:
+        message = TextSendMessage(text="(掰掰👋記得有空回來找我喔～～")
+        line_bot_api.reply_message(event.reply_token, message)       
     #elif '合作' in msg:
        # message = imagemap_message()
        # line_bot_api.reply_message(event.reply_token, message)
