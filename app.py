@@ -112,9 +112,9 @@ def handle_message(event):
         message = TextSendMessage(text="掰掰👋記得有空回來找我喔～～")
         line_bot_api.reply_message(event.reply_token, message)  
     # elif '8' in msg:
-        message = TextSendMessage(text="掰掰👋記得有空回來找我喔～～")
-        line_bot_api.reply_message(event.reply_token, message)  
-   # elif 'bye' in msg:
+      #  message = TextSendMessage(text="掰掰👋記得有空回來找我喔～～")
+     #   line_bot_api.reply_message(event.reply_token, message)  
+    elif 'bye' in msg:
         message = TextSendMessage(text="掰掰👋記得有空回來找我喔～～")
         line_bot_api.reply_message(event.reply_token, message) 
     elif '先走' in msg:
