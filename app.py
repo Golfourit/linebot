@@ -63,13 +63,6 @@ def handle_message(event):
     elif  '教養院' in msg:
         message = TextSendMessage(text="__「我要給他們一個終老的家」___"+"\n"+"我們的方舟媽媽謝春蘭女士，為了我們的憨寶貝已經從民國78年忙碌至今了，大家請多多支持阿！！🤗🤗🤗🤗"+"\n"+"如果想做更多公益的也非常歡迎👏到他們官網看更多啦😆😆"+"\n"+"🔗🔗"+"\n"+"https://www.funchao.com.tw/")
         line_bot_api.reply_message(event.reply_token, message)  
-
-    if  '方舟' in msg: 
-        message =ImageSendMessage(
-        original_content_url="https://www.bing.com/images/blob?bcid=S7TDN7lXjAgCO7LYxM.kuLSQ1mDF.....3M",
-        preview_image_url="https://www.bing.com/images/blob?bcid=S7TDN7lXjAgCO7LYxM.kuLSQ1mDF.....3M"
-        )
-        line_bot_api.reply_message(event.reply_token, message)
     if  'help' in msg:
         message = TextSendMessage(text="本系統可以自動回覆一般基本疑問。"+"\n"+"稍微複雜的疑問，則會由客服人員為您回覆。"+"\n"+"您可以立即詢問以下問題，例如："+"\n"+"・營業時間？"+"\n"+"・可刷卡嗎？"+"\n"+"・我要預約"+"\n"+"・推薦菜色？"+"\n"+"・店家地址？"+"\n"+"・消費價位？"+"\n"+"・最近車站？"+"\n"+"・店家網站？"+"\n"+"・可吸菸嗎？")
         line_bot_api.reply_message(event.reply_token, message)
