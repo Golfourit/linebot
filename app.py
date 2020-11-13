@@ -55,7 +55,7 @@ def handle_message(event):
     elif  '合作' in msg:
         message = imagemap_message()
         line_bot_api.reply_message(event.reply_token, message)
-    elif '最新活動訊息' in msg:
+    elif '活動' in msg:
         message = buttons_message()
         line_bot_api.reply_message(event.reply_token, message)
     elif '註冊會員' in msg:
