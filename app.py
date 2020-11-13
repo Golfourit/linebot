@@ -48,12 +48,12 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
-    if '方舟' in msg:
-        message = TextSendMessage(text="____「我要給他們一個終老的家」____"+"\n"+"我們的方舟媽媽謝春蘭女士，為了我們的憨寶貝已經從民國78年忙碌至今了，大家請多多支持阿！！🤗🤗🤗🤗"+"\n"+"如果想做更多公益的也非常歡迎👏到他們官網看更多啦😆😆"+"\n"+"🔗🔗"+"\n"+"https://www.funchao.com.tw/")
-       # message +=ImageSendMessage(
-           # original_content_url="https://linebot\LineBot圖片\關於方舟.jpg",
-           # preview_image_url=""
-       # )
+    if '方舟' or '方舟啟智教養院' or '教養院' in msg:
+        message = TextSendMessage(text="___「我要給他們一個終老的家」____"+"\n"+"我們的方舟媽媽謝春蘭女士，為了我們的憨寶貝已經從民國78年忙碌至今了，大家請多多支持阿！！🤗🤗🤗🤗"+"\n"+"如果想做更多公益的也非常歡迎👏到他們官網看更多啦😆😆"+"\n"+"🔗🔗"+"\n"+"https://www.funchao.com.tw/")
+        message +=ImageSendMessage(
+           original_content_url="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/124782744_1813859822098226_8923766330771735841_o.jpg?_nc_cat=102&ccb=2&_nc_sid=730e14&_nc_ohc=lIx9gXwk2OsAX8o6euF&_nc_ht=scontent.ftpe8-4.fna&oh=37a12708dd1c1f86550b501a4b15c824&oe=5FD2CC8D",
+           preview_image_url="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/124782744_1813859822098226_8923766330771735841_o.jpg?_nc_cat=102&ccb=2&_nc_sid=730e14&_nc_ohc=lIx9gXwk2OsAX8o6euF&_nc_ht=scontent.ftpe8-4.fna&oh=37a12708dd1c1f86550b501a4b15c824&oe=5FD2CC8D"
+        )
                                    
         line_bot_api.reply_message(event.reply_token, message)
     
