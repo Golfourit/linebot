@@ -117,12 +117,12 @@ def handle_message(event):
     #elif 'bye' in msg:
      #   message = TextSendMessage(text="掰掰👋記得有空回來找我喔～～")
       #  line_bot_api.reply_message(event.reply_token, message) 
-    #elif '先走' in msg:
-     #   message = TextSendMessage(text="掰掰👋記得有空回來找我喔～～")
-      #  line_bot_api.reply_message(event.reply_token, message) 
-    #elif '再見' in msg:
-     #   message = TextSendMessage(text="掰掰👋記得有空回來找我喔～～")
-      #  line_bot_api.reply_message(event.reply_token, message)       
+    elif '先走' in msg:
+        message = TextSendMessage(text="掰掰👋記得有空回來找我喔～～")
+        line_bot_api.reply_message(event.reply_token, message) 
+    elif '再見' in msg:
+       message = TextSendMessage(text="掰掰👋記得有空回來找我喔～～")
+       line_bot_api.reply_message(event.reply_token, message)       
     #elif '合作' in msg:
        # message = imagemap_message()
        # line_bot_api.reply_message(event.reply_token, message)
