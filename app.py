@@ -97,13 +97,13 @@ def handle_message(event):
         message = TextSendMessage(text="我們ㄟ果肉商店最近的車站就是中壢火車站呦！"+"\n"+"俗話說麻雀雖小，五臟俱全。"+"\n"+"中壢車站常常有人說他很小很醜～但其實他確實蠻重要的一個車站呢！長知識了💪🧠🧠"+"\n"+"Google地圖🔗👇👇"+"\n"+"中壢車站"+"\n"+"https://goo.gl/maps/rB5nPDYyKyKNb6q4A")
         line_bot_api.reply_message(event.reply_token, message)    
     elif '網站' in msg:
-        message = TextSendMessage(text="我們官網的連結在這！有興趣的都歡迎上來看看喔～～👏"+"\n"+"🔗🔗https://handmade-eggroll-3.jimdosite.com/")
+        message = TextSendMessage(text="我們官網的連結在這！有興趣的都歡迎上來看看喔～～👏"+"\n"+"🔗🔗"+"https://handmade-eggroll-3.jimdosite.com/")
         line_bot_api.reply_message(event.reply_token, message)     
     elif '官網' in msg:
-        message = TextSendMessage(text="我們官網的連結在這！有興趣的都歡迎上來看看喔～～👏"+"\n"+"🔗🔗https://handmade-eggroll-3.jimdosite.com/")
+        message = TextSendMessage(text="我們官網的連結在這！有興趣的都歡迎上來看看喔～～👏"+"\n"+"🔗🔗"+"https://handmade-eggroll-3.jimdosite.com/")
         line_bot_api.reply_message(event.reply_token, message) 
     elif '官方網站' in msg:
-        message = TextSendMessage(text="我們官網的連結在這！有興趣的都歡迎上來看看喔～～👏"+"\n"+"🔗🔗https://handmade-eggroll-3.jimdosite.com/")
+        message = TextSendMessage(text="我們官網的連結在這！有興趣的都歡迎上來看看喔～～👏"+"\n"+"🔗🔗"+"https://handmade-eggroll-3.jimdosite.com/")
         line_bot_api.reply_message(event.reply_token, message) 
     elif '吸菸' in msg:
         message = TextSendMessage(text="吸菸傷身又不環保"+"\n"+"不如來吃蛋捲吧！好吃😋又便宜！"+"\n"+"心動不如馬上行動！😝😝")
@@ -111,9 +111,9 @@ def handle_message(event):
      elif '掰' in msg:
         message = TextSendMessage(text="掰掰👋記得有空回來找我喔～～")
         line_bot_api.reply_message(event.reply_token, message)  
-    # elif '8' in msg:
-      #  message = TextSendMessage(text="掰掰👋記得有空回來找我喔～～")
-     #   line_bot_api.reply_message(event.reply_token, message)  
+    elif '8' in msg:
+        message = TextSendMessage(text="掰掰👋記得有空回來找我喔～～")
+        line_bot_api.reply_message(event.reply_token, message)  
     elif 'bye' in msg:
         message = TextSendMessage(text="掰掰👋記得有空回來找我喔～～")
         line_bot_api.reply_message(event.reply_token, message) 
