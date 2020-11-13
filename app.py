@@ -67,7 +67,7 @@ def handle_message(event):
         message = function_list()
         line_bot_api.reply_message(event.reply_token, message)
     else:
-        message = TextSendMessage(text="https://tw.shop.com/maso0310/search/"+msg)
+        message = TextSendMessage(text=msg)
         line_bot_api.reply_message(event.reply_token, message)
 
 import os
