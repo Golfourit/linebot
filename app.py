@@ -48,7 +48,11 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
-    if '合作' in msg:
+    if '方舟' in msg:
+        message = TextSendMessage(text="__「我要給他們一個終老的家」"+ "\n"+"___"+"\n"+"我們的方舟媽媽謝春蘭女士為了我們的憨寶貝已經從民國78年忙碌至今了，大家請多多支持阿!!"+"\n\n"+"如果想做更多公益的也非常歡迎到他們官網看更多啦"+"\n"+"https://www.funchao.com.tw/")
+    
+    
+    elif  '合作' in msg:
         message = imagemap_message()
         line_bot_api.reply_message(event.reply_token, message)
     elif '最新活動訊息' in msg:
