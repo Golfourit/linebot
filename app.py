@@ -55,14 +55,18 @@ def handle_message(event):
          #  preview_image_url="https://www.bing.com/images/search?view=detailV2&insightstoken=bcid_S7TDN7lXjAgCO7LYxM.kuLSQ1mDF.....3M*ccid_tMM3uVeM&form=ANCMS1&iss=SBIUPLOADGET&selectedindex=0&id=-1937829305&ccid=tMM3uVeM&exph=600&expw=348&vt=2&sim=11"
         #)
        # line_bot_api.reply_message(event.reply_token, message)
+       message = {
+       "type": "方舟",
+       "text": "__「我要給他們一個終老的家」___"+"\n"+"我們的方舟媽媽謝春蘭女士，為了我們的憨寶貝已經從民國78年忙碌至今了，大家請多多支持阿！！🤗🤗🤗🤗"+"\n"+"如果想做更多公益的也非常歡迎👏到他們官網看更多啦😆😆"+"\n"+"🔗🔗"+"\n"+"https://www.funchao.com.tw/"
+       }
     if '方舟' in msg:
         message = TextSendMessage(text="__「我要給他們一個終老的家」___"+"\n"+"我們的方舟媽媽謝春蘭女士，為了我們的憨寶貝已經從民國78年忙碌至今了，大家請多多支持阿！！🤗🤗🤗🤗"+"\n"+"如果想做更多公益的也非常歡迎👏到他們官網看更多啦😆😆"+"\n"+"🔗🔗"+"\n"+"https://www.funchao.com.tw/")      
         line_bot_api.reply_message(event.reply_token, message)  
-    elif '貓咪' in msg:
-        message =ImageSendMessage(
-           original_content_url="https://www.google.com/imgres?imgurl=https%3A%2F%2Fstorage.googleapis.com%2Fwww-cw-com-tw%2Farticle%2F201810%2Farticle-5bd182cf13ebb.jpg&imgrefurl=https%3A%2F%2Fwww.cw.com.tw%2Farticle%2F5092640&tbnid=H000aw0af_pYxM&vet=12ahUKEwjE_-3R5YDtAhW4zIsBHVSNBn8QMygBegUIARDPAQ..i&docid=kqMbw17hcRSnlM&w=630&h=422&q=%E8%B2%93&ved=2ahUKEwjE_-3R5YDtAhW4zIsBHVSNBn8QMygBegUIARDPAQ",
-           preview_image_url="https://www.google.com/imgres?imgurl=https%3A%2F%2Fstorage.googleapis.com%2Fwww-cw-com-tw%2Farticle%2F201810%2Farticle-5bd182cf13ebb.jpg&imgrefurl=https%3A%2F%2Fwww.cw.com.tw%2Farticle%2F5092640&tbnid=H000aw0af_pYxM&vet=12ahUKEwjE_-3R5YDtAhW4zIsBHVSNBn8QMygBegUIARDPAQ..i&docid=kqMbw17hcRSnlM&w=630&h=422&q=%E8%B2%93&ved=2ahUKEwjE_-3R5YDtAhW4zIsBHVSNBn8QMygBegUIARDPAQ" )
-           line_bot_api.reply_message(event.reply_token, message)        
+    #elif '貓咪' in msg:
+       # message =ImageSendMessage(
+        #   original_content_url="https://www.google.com/imgres?imgurl=https%3A%2F%2Fstorage.googleapis.com%2Fwww-cw-com-tw%2Farticle%2F201810%2Farticle-5bd182cf13ebb.jpg&imgrefurl=https%3A%2F%2Fwww.cw.com.tw%2Farticle%2F5092640&tbnid=H000aw0af_pYxM&vet=12ahUKEwjE_-3R5YDtAhW4zIsBHVSNBn8QMygBegUIARDPAQ..i&docid=kqMbw17hcRSnlM&w=630&h=422&q=%E8%B2%93&ved=2ahUKEwjE_-3R5YDtAhW4zIsBHVSNBn8QMygBegUIARDPAQ",
+        #   preview_image_url="https://www.google.com/imgres?imgurl=https%3A%2F%2Fstorage.googleapis.com%2Fwww-cw-com-tw%2Farticle%2F201810%2Farticle-5bd182cf13ebb.jpg&imgrefurl=https%3A%2F%2Fwww.cw.com.tw%2Farticle%2F5092640&tbnid=H000aw0af_pYxM&vet=12ahUKEwjE_-3R5YDtAhW4zIsBHVSNBn8QMygBegUIARDPAQ..i&docid=kqMbw17hcRSnlM&w=630&h=422&q=%E8%B2%93&ved=2ahUKEwjE_-3R5YDtAhW4zIsBHVSNBn8QMygBegUIARDPAQ" )
+        #   line_bot_api.reply_message(event.reply_token, message)        
     elif '啟智教養院' in msg:
         message = TextSendMessage(text="__「我要給他們一個終老的家」___"+"\n"+"我們的方舟媽媽謝春蘭女士，為了我們的憨寶貝已經從民國78年忙碌至今了，大家請多多支持阿！！🤗🤗🤗🤗"+"\n"+"如果想做更多公益的也非常歡迎👏到他們官網看更多啦😆😆"+"\n"+"🔗🔗"+"\n"+"https://www.funchao.com.tw/")
         line_bot_api.reply_message(event.reply_token, message)  
