@@ -48,11 +48,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage,message1=TextMessage)
 def handle_message(event):
     msg = event.message.text 
-    message = ImageSendMessage(
-    original_content_url='https://example.com/original.jpg',
-    preview_image_url='https://example.com/preview.jpg'
-   )  
-   line_bot_api.reply_message(event.reply_token, message)
+    
     #massage1 =TextMessage #
      #if ('方舟' or '方舟啟智教養院' or '教養院') in msg:
        #   message =ImageSendMessage(
