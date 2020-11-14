@@ -45,10 +45,10 @@ def callback():
 
 
 # 處理訊息
-@handler.add(MessageEvent, message=TextMessage)
+@handler.add(MessageEvent, message=TextMessage,message1=TextMessage)
 def handle_message(event):
     msg = event.message.text 
-    massage1 =TextMessage #
+    #massage1 =TextMessage #
      #if ('方舟' or '方舟啟智教養院' or '教養院') in msg:
        #   message =ImageSendMessage(
         #   original_content_url="https://www.bing.com/images/search?view=detailV2&insightstoken=bcid_S7TDN7lXjAgCO7LYxM.kuLSQ1mDF.....3M*ccid_tMM3uVeM&form=ANCMS1&iss=SBIUPLOADGET&selectedindex=0&id=-1937829305&ccid=tMM3uVeM&exph=600&expw=348&vt=2&sim=11",
