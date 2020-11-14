@@ -48,6 +48,11 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage,message1=TextMessage)
 def handle_message(event):
     msg = event.message.text 
+    message = ImageSendMessage(
+    original_content_url='https://example.com/original.jpg',
+    preview_image_url='https://example.com/preview.jpg'
+   )  
+   line_bot_api.reply_message(event.reply_token, message)
     #massage1 =TextMessage #
      #if ('方舟' or '方舟啟智教養院' or '教養院') in msg:
        #   message =ImageSendMessage(
@@ -55,10 +60,7 @@ def handle_message(event):
          #  preview_image_url="https://www.bing.com/images/search?view=detailV2&insightstoken=bcid_S7TDN7lXjAgCO7LYxM.kuLSQ1mDF.....3M*ccid_tMM3uVeM&form=ANCMS1&iss=SBIUPLOADGET&selectedindex=0&id=-1937829305&ccid=tMM3uVeM&exph=600&expw=348&vt=2&sim=11"
         #)
        # line_bot_api.reply_message(event.reply_token, message)
-       message = {
-       "type": "方舟",
-       "text": "__「我要給他們一個終老的家」___"+"\n"+"我們的方舟媽媽謝春蘭女士，為了我們的憨寶貝已經從民國78年忙碌至今了，大家請多多支持阿！！🤗🤗🤗🤗"+"\n"+"如果想做更多公益的也非常歡迎👏到他們官網看更多啦😆😆"+"\n"+"🔗🔗"+"\n"+"https://www.funchao.com.tw/"
-       }
+
     if '方舟' in msg:
         message = TextSendMessage(text="__「我要給他們一個終老的家」___"+"\n"+"我們的方舟媽媽謝春蘭女士，為了我們的憨寶貝已經從民國78年忙碌至今了，大家請多多支持阿！！🤗🤗🤗🤗"+"\n"+"如果想做更多公益的也非常歡迎👏到他們官網看更多啦😆😆"+"\n"+"🔗🔗"+"\n"+"https://www.funchao.com.tw/")      
         line_bot_api.reply_message(event.reply_token, message)  
