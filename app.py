@@ -50,14 +50,15 @@ def handle_message(event):
     msg = event.message.text 
 
     if '方舟' in msg:
-        try:
+       try:
             message = ImageSendMessage(
-            original_content_url='https://example.com/original.jpg',
-            preview_image_url='https://example.com/preview.jpg'
-            )  
-            line_bot_api.reply_message(event.reply_token, message)
-        except:
-            line_bot_api.reply_message(event.reply_token, TextSendMessage(text="發生錯誤!")
+           original_content_url='https://example.com/original.jpg',
+           preview_image_url='https://example.com/preview.jpg'
+           )  
+           line_bot_api.reply_message(event.reply_token, message)
+       except:
+            message= TextSendMessage(text="發生錯誤!")
+            line_bot_api.reply_message(event.reply_token, message )
     #massage1 =TextMessage #
      #if ('方舟' or '方舟啟智教養院' or '教養院') in msg:
        #   message =ImageSendMessage(
