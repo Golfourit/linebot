@@ -144,35 +144,35 @@ def handle_message(event):
         message = [
             ImageSendMessage(
                 original_content_url="https://i.imgur.com/UxjNeO1.jpg",
-                preview_image_url="hhttps://i.imgur.com/UxjNeO1.jpg"
+                preview_image_url="https://i.imgur.com/UxjNeO1.jpg"
             ),
             TextSendMessage(
                 text="我們官網的連結在這！有興趣的都歡迎上來看看喔～～👏"+"\n"+"🔗🔗"+"https://handmade-eggroll-3.jimdosite.com/"
             )
         ]
         line_bot_api.reply_message(event.reply_token, message)     
-    #elif '官網' in msg:
-    #    message = [
-     #       ImageSendMessage(
-     #           original_content_url="https://i.imgur.com/UxjNeO1.jpg",
-       #         preview_image_url="hhttps://i.imgur.com/UxjNeO1.jpg"
-     #       ),
-      #      TextSendMessage(
-      #          text="我們官網的連結在這！有興趣的都歡迎上來看看喔～～👏"+"\n"+"🔗🔗"+"https://handmade-eggroll-3.jimdosite.com/"
-      #      )
-       # ]
-     #   line_bot_api.reply_message(event.reply_token, message) 
-    #elif '官方網站' in msg:
-       # message = [
-         #   ImageSendMessage(
-        #        original_content_url="https://i.imgur.com/UxjNeO1.jpg",
-          #      preview_image_url="hhttps://i.imgur.com/UxjNeO1.jpg"
-        #    ),
-         #   TextSendMessage(
-         #       text="我們官網的連結在這！有興趣的都歡迎上來看看喔～～👏"+"\n"+"🔗🔗"+"https://handmade-eggroll-3.jimdosite.com/"
-        #    )
-      #  ]
-       # line_bot_api.reply_message(event.reply_token, message) 
+    elif '官網' in msg:
+        message = [
+            ImageSendMessage(
+                original_content_url="https://i.imgur.com/UxjNeO1.jpg",
+                preview_image_url="https://i.imgur.com/UxjNeO1.jpg"
+            ),
+            TextSendMessage(
+                text="我們官網的連結在這！有興趣的都歡迎上來看看喔～～👏"+"\n"+"🔗🔗"+"https://handmade-eggroll-3.jimdosite.com/"
+            )
+        ]
+        line_bot_api.reply_message(event.reply_token, message) 
+    elif '官方網站' in msg:
+        message = [
+            ImageSendMessage(
+                original_content_url="https://i.imgur.com/UxjNeO1.jpg",
+                preview_image_url="https://i.imgur.com/UxjNeO1.jpg"
+            ),
+            TextSendMessage(
+                text="我們官網的連結在這！有興趣的都歡迎上來看看喔～～👏"+"\n"+"🔗🔗"+"https://handmade-eggroll-3.jimdosite.com/"
+            )
+        ]
+        line_bot_api.reply_message(event.reply_token, message) 
     elif '吸菸' in msg:
         message = TextSendMessage(text="吸菸傷身又不環保"+"不如來吃蛋捲吧！好吃😋又便宜！"+"\n"+"心動不如馬上行動！😝😝")
         line_bot_api.reply_message(event.reply_token, message)  
