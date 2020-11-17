@@ -95,7 +95,7 @@ def handle_message(event):
         message = [
             TextSendMessage(
                 text="今天還不錯欸！可是少了你🤣"
-                )
+                ),
             StickerSendMessage(
                 package_id='',
                 sticker_id='51626502'
@@ -106,7 +106,7 @@ def handle_message(event):
         message = [
             TextSendMessage(
                 text="今天還不錯欸！可是少了你🤣"
-                )
+                ),
             StickerSendMessage(
                 package_id='11538',
                 sticker_id='51626502'
@@ -117,7 +117,7 @@ def handle_message(event):
         message = [
             TextSendMessage(
                 text="今天還不錯欸！可是少了你🤣"
-                )
+                ),
             StickerSendMessage(
                 package_id='11538',
                 sticker_id='51626502'
