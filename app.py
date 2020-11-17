@@ -188,7 +188,7 @@ def handle_message(event):
         message = TextSendMessage(text="怎麼啦～蛋捲君在這🤣")
         line_bot_api.reply_message(event.reply_token, message)   
     elif '蛋捲' in msg:
-        meggage = TextSendMessage(text="在找蛋捲君嗎？😉"+"\n"+"想買可以到我們的推薦菜單去看有什麼蛋捲呦😜")
+        message = TextSendMessage(text="在找蛋捲君嗎？😉"+"\n"+"想買可以到我們的推薦菜單去看有什麼蛋捲呦😜")
         line_bot_api.reply_message(event.reply_token, message)
     
     #方舟教養會的基本小介紹
