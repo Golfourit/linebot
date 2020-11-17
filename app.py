@@ -51,33 +51,33 @@ def handle_message(event):
     if '方舟' in msg:
         message = [
             TextSendMessage(
-            text="__「我要給他們一個終老的家」___"+"\n"+"我們的方舟媽媽謝春蘭女士，為了我們的憨寶貝已經從民國78年忙碌至今了，大家請多多支持阿！！🤗🤗🤗🤗"+"\n"+"如果想做更多公益的也非常歡迎👏到他們官網看更多啦😆😆"+"\n"+"🔗🔗"+"\n"+"https://www.funchao.com.tw/"
+                text="__「我要給他們一個終老的家」___"+"\n"+"我們的方舟媽媽謝春蘭女士，為了我們的憨寶貝已經從民國78年忙碌至今了，大家請多多支持阿！！🤗🤗🤗🤗"+"\n"+"如果想做更多公益的也非常歡迎👏到他們官網看更多啦😆😆"+"\n"+"🔗🔗"+"\n"+"https://www.funchao.com.tw/"
             ),
             ImageSendMessage(
-            original_content_url="https://i.imgur.com/JQmusAr.jpg",
-            preview_image_url="https://i.imgur.com/JQmusAr.jpg"
+                original_content_url="https://i.imgur.com/JQmusAr.jpg",
+                preview_image_url="https://i.imgur.com/JQmusAr.jpg"
             )
         ]   
         line_bot_api.reply_message(event.reply_token, message) 
     elif '啟智教養院' in msg:
         message = [
             TextSendMessage(
-            text="__「我要給他們一個終老的家」___"+"\n"+"我們的方舟媽媽謝春蘭女士，為了我們的憨寶貝已經從民國78年忙碌至今了，大家請多多支持阿！！🤗🤗🤗🤗"+"\n"+"如果想做更多公益的也非常歡迎👏到他們官網看更多啦😆😆"+"\n"+"🔗🔗"+"\n"+"https://www.funchao.com.tw/"
+                text="__「我要給他們一個終老的家」___"+"\n"+"我們的方舟媽媽謝春蘭女士，為了我們的憨寶貝已經從民國78年忙碌至今了，大家請多多支持阿！！🤗🤗🤗🤗"+"\n"+"如果想做更多公益的也非常歡迎👏到他們官網看更多啦😆😆"+"\n"+"🔗🔗"+"\n"+"https://www.funchao.com.tw/"
             ),
             ImageSendMessage(
-            original_content_url="https://i.imgur.com/JQmusAr.jpg",
-            preview_image_url="https://i.imgur.com/JQmusAr.jpg"
+                original_content_url="https://i.imgur.com/JQmusAr.jpg",
+                preview_image_url="https://i.imgur.com/JQmusAr.jpg"
             )
         ]   
         line_bot_api.reply_message(event.reply_token, message)  
     elif  '教養院' in msg:
         message = [
             TextSendMessage(
-            text="__「我要給他們一個終老的家」___"+"\n"+"我們的方舟媽媽謝春蘭女士，為了我們的憨寶貝已經從民國78年忙碌至今了，大家請多多支持阿！！🤗🤗🤗🤗"+"\n"+"如果想做更多公益的也非常歡迎👏到他們官網看更多啦😆😆"+"\n"+"🔗🔗"+"\n"+"https://www.funchao.com.tw/"
+                text="__「我要給他們一個終老的家」___"+"\n"+"我們的方舟媽媽謝春蘭女士，為了我們的憨寶貝已經從民國78年忙碌至今了，大家請多多支持阿！！🤗🤗🤗🤗"+"\n"+"如果想做更多公益的也非常歡迎👏到他們官網看更多啦😆😆"+"\n"+"🔗🔗"+"\n"+"https://www.funchao.com.tw/"
             ),
             ImageSendMessage(
-            original_content_url="https://i.imgur.com/JQmusAr.jpg",
-            preview_image_url="https://i.imgur.com/JQmusAr.jpg"
+                original_content_url="https://i.imgur.com/JQmusAr.jpg",
+                preview_image_url="https://i.imgur.com/JQmusAr.jpg"
             )
         ]   
         line_bot_api.reply_message(event.reply_token, message)  
@@ -117,12 +117,12 @@ def handle_message(event):
     elif '價位' in msg:
         message = [
             ImageSendMessage(
-            original_content_url="https://i.imgur.com/HVEuKdJ.jpg",
-            preview_image_url="https://i.imgur.com/HVEuKdJ.jpg"
+                original_content_url="https://i.imgur.com/HVEuKdJ.jpg",
+                preview_image_url="https://i.imgur.com/HVEuKdJ.jpg"
             ),
             ImageSendMessage(
-            original_content_url="https://i.imgur.com/B8J7riZ.jpg",
-            preview_image_url="https://i.imgur.com/B8J7riZ.jpg"
+                original_content_url="https://i.imgur.com/B8J7riZ.jpg",
+                preview_image_url="https://i.imgur.com/B8J7riZ.jpg"
             ),
             TextSendMessage(
                 text="說到這個～～"+"\n"+"ㄟ果肉蛋捲✖️The Naivest 😉\n"+"蛋捲我本人要給你看看我們設計的海報啦！！有包刮價錢、口味、訂購單QRcode!快來看看吧"+"\n"+"可以到我們的訂購單看看～"+"\n"+"🔗https://docs.google.com/forms/d/e/1FAIpQLScdbpfT8a5uaLut0o7O2kO_N0m9xnrv7O49gVBBdRwMNk16SA/viewform"+"\n"+"還有IG.FB呦！"+"\n"+"🔗IG:https://instagram.com/handmade_eggroll?igshid=64g5czfwa23l"+"\n"+"🔗FB:https://m.facebook.com/ㄟ果肉-The-naivest-手工蛋捲-114153793616901"
@@ -130,16 +130,49 @@ def handle_message(event):
         ]
         line_bot_api.reply_message(event.reply_token, message)   
     elif '車站' in msg:
-        message = TextSendMessage(text="我們ㄟ果肉商店最近的車站就是中壢火車站呦！"+"\n"+"俗話說麻雀雖小，五臟俱全。"+"\n"+"中壢車站常常有人說他很小很醜～但其實他確實蠻重要的一個車站呢！長知識了💪🧠🧠"+"\n"+"Google地圖🔗👇👇"+"\n"+"中壢車站"+"\n"+"https://goo.gl/maps/rB5nPDYyKyKNb6q4A")
+        message = [
+            message = [
+            ImageSendMessage(
+                original_content_url="https://i.imgur.com/XuwpWCP.jpg",
+                preview_image_url="https://i.imgur.com/XuwpWCP.jpg"
+            ),
+            TextSendMessage(
+                text="我們ㄟ果肉商店最近的車站就是中壢火車站呦！"+"\n"+"俗話說麻雀雖小，五臟俱全。"+"\n"+"中壢車站常常有人說他很小很醜～但其實他確實蠻重要的一個車站呢！長知識了💪🧠🧠"+"\n"+"Google地圖🔗👇👇"+"\n"+"中壢車站"+"\n"+"https://goo.gl/maps/rB5nPDYyKyKNb6q4A"
+                )
+        ]
         line_bot_api.reply_message(event.reply_token, message)    
     elif '網站' in msg:
-        message = TextSendMessage(text="我們官網的連結在這！有興趣的都歡迎上來看看喔～～👏"+"\n"+"🔗🔗"+"https://handmade-eggroll-3.jimdosite.com/")
+        message = [
+            ImageSendMessage(
+                original_content_url="https://i.imgur.com/UxjNeO1.jpg",
+                preview_image_url="hhttps://i.imgur.com/UxjNeO1.jpg"
+            ),
+            TextSendMessage(
+                text="我們官網的連結在這！有興趣的都歡迎上來看看喔～～👏"+"\n"+"🔗🔗"+"https://handmade-eggroll-3.jimdosite.com/"
+            )
+        ]
         line_bot_api.reply_message(event.reply_token, message)     
     elif '官網' in msg:
-        message = TextSendMessage(text="我們官網的連結在這！有興趣的都歡迎上來看看喔～～👏"+"\n"+"🔗🔗"+"https://handmade-eggroll-3.jimdosite.com/")
+        message = [
+            ImageSendMessage(
+                original_content_url="https://i.imgur.com/UxjNeO1.jpg",
+                preview_image_url="hhttps://i.imgur.com/UxjNeO1.jpg"
+            ),
+            TextSendMessage(
+                text="我們官網的連結在這！有興趣的都歡迎上來看看喔～～👏"+"\n"+"🔗🔗"+"https://handmade-eggroll-3.jimdosite.com/"
+            )
+        ]
         line_bot_api.reply_message(event.reply_token, message) 
     elif '官方網站' in msg:
-        message = TextSendMessage(text="我們官網的連結在這！有興趣的都歡迎上來看看喔～～👏"+"\n"+"🔗🔗"+"https://handmade-eggroll-3.jimdosite.com/")
+        message = [
+            ImageSendMessage(
+                original_content_url="https://i.imgur.com/UxjNeO1.jpg",
+                preview_image_url="hhttps://i.imgur.com/UxjNeO1.jpg"
+            ),
+            TextSendMessage(
+                text="我們官網的連結在這！有興趣的都歡迎上來看看喔～～👏"+"\n"+"🔗🔗"+"https://handmade-eggroll-3.jimdosite.com/"
+            )
+        ]
         line_bot_api.reply_message(event.reply_token, message) 
     elif '吸菸' in msg:
         message = TextSendMessage(text="吸菸傷身又不環保"+"\n"+"不如來吃蛋捲吧！好吃😋又便宜！"+"\n"+"心動不如馬上行動！😝😝")
