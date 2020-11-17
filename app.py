@@ -96,13 +96,34 @@ def handle_message(event):
             TextSendMessage(
                 text="今天還不錯欸！可是少了你🤣"
                 )
-           # StickerSendMessage(
-             #   package_id='1'
-            #    sticker_id='5'
-           # )
+            StickerSendMessage(
+                package_id='',
+                sticker_id='51626502'
+            )
         ]
         line_bot_api.reply_message(event.reply_token, message)
-
+    elif '你好嗎' in msg:
+        message = [
+            TextSendMessage(
+                text="今天還不錯欸！可是少了你🤣"
+                )
+            StickerSendMessage(
+                package_id='11538',
+                sticker_id='51626502'
+            )
+        ]
+        line_bot_api.reply_message(event.reply_token, message)
+    elif '還好嗎' in msg:
+        message = [
+            TextSendMessage(
+                text="今天還不錯欸！可是少了你🤣"
+                )
+            StickerSendMessage(
+                package_id='11538',
+                sticker_id='51626502'
+            )
+        ]
+        line_bot_api.reply_message(event.reply_token, message)
 
     #方舟教養會的基本小介紹
     if '方舟' in msg:
