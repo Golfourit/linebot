@@ -75,6 +75,17 @@ def handle_message(event):
             )
         ]
         line_bot_api.reply_message(event.reply_token, message)
+    elif '你好帥' in msg:                           # 帥回應與打招呼重疊，放前面判斷  
+        message = [
+            TextSendMessage( 
+                text="我帥吧！😎好啦你也是🤪"
+                ),
+            StickerSendMessage(
+                package_id='11538',
+                sticker_id='51626501'
+            )
+        ]
+        line_bot_api.reply_message(event.reply_token, message)
     elif '你好' in msg:
         message = TextSendMessage(text="安安😍😍")
         line_bot_api.reply_message(event.reply_token, message)
@@ -159,17 +170,7 @@ def handle_message(event):
             )
         ]
         line_bot_api.reply_message(event.reply_token, message)
-    elif '你好帥' in msg:                           
-        message = [
-            TextSendMessage( 
-                text="我帥吧！😎好啦你也是🤪"
-                ),
-            StickerSendMessage(
-                package_id='11538',
-                sticker_id='51626501'
-            )
-        ]
-        line_bot_api.reply_message(event.reply_token, message)
+    
     elif '好帥' in msg:
         message = [
             TextSendMessage(
@@ -180,6 +181,11 @@ def handle_message(event):
                 sticker_id='51626496'
             )
         ]
+        line_bot_api.reply_message(event.reply_token, message)
+    
+    #蛋捲君 回應
+    if '蛋捲君' in msg:
+        message = TextSendMessage(text="怎麼啦～蛋捲君在這🤣")
         line_bot_api.reply_message(event.reply_token, message)
     
 
