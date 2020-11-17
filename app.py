@@ -97,8 +97,8 @@ def handle_message(event):
                 text="今天還不錯欸！可是少了你🤣"
                 ),
             StickerSendMessage(
-                package_id='11538'
-                sticker_id='51626502'
+                package_id='1'
+                sticker_id='5'
             )
         ]
         line_bot_api.reply_message(event.reply_token, message)
