@@ -187,6 +187,8 @@ def handle_message(event):
     if '蛋捲君' in msg:
         message = TextSendMessage(text="怎麼啦～蛋捲君在這🤣")
         line_bot_api.reply_message(event.reply_token, message)
+    elif '蛋捲' in msg:
+        meggage =TextSendMessage(text="在找蛋捲君嗎？😉"+"\n"+"想買可以到我們的推薦菜單去看有什麼蛋捲呦😜")
     
 
     #方舟教養會的基本小介紹
@@ -253,6 +255,9 @@ def handle_message(event):
         message = TextSendMessage(text="說到推薦的 我們當然是推薦我們的蛋捲ㄚ！！🤣🤣"+"\n"+"有興趣可以去我們官網看看呦！連結在這！！https://handmade-eggroll-3.jimdosite.com/"+"\n"+"也可以直接去訂購單看看ㄛ！https://docs.google.com/forms/d/e/1FAIpQLScdbpfT8a5uaLut0o7O2kO_N0m9xnrv7O49gVBBdRwMNk16SA/viewform"+"\n"+"我們除了line也有粉專~~"+"\n"+"Ig :https://instagram.com/handmade_eggroll?igshid=12wh42cyy9hlz"+"\n"+"Fb :https://m.facebook.com/ㄟ果肉-The-naivest-手工蛋捲-114153793616901"+"ㄟ果肉蛋捲✖️The Naivest有任何問題都可以直接傳訊息通知我們～～我們都會盡快為你服務呦😙😙")
         line_bot_api.reply_message(event.reply_token, message)
     elif '菜色' in msg:   
+        message = TextSendMessage(text="說到推薦的 我們當然是推薦我們的蛋捲ㄚ！！🤣🤣"+"\n"+"有興趣可以去我們官網看看呦！連結在這！！https://handmade-eggroll-3.jimdosite.com/"+"\n"+"也可以直接去訂購單看看ㄛ！https://docs.google.com/forms/d/e/1FAIpQLScdbpfT8a5uaLut0o7O2kO_N0m9xnrv7O49gVBBdRwMNk16SA/viewform"+"\n"+"我們除了line也有粉專~~"+"\n"+"Ig :https://instagram.com/handmade_eggroll?igshid=12wh42cyy9hlz"+"\n"+"Fb :https://m.facebook.com/ㄟ果肉-The-naivest-手工蛋捲-114153793616901"+"ㄟ果肉蛋捲✖️The Naivest有任何問題都可以直接傳訊息通知我們～～我們都會盡快為你服務呦😙😙")
+        line_bot_api.reply_message(event.reply_token, message)
+    elif '菜單' in msg:   
         message = TextSendMessage(text="說到推薦的 我們當然是推薦我們的蛋捲ㄚ！！🤣🤣"+"\n"+"有興趣可以去我們官網看看呦！連結在這！！https://handmade-eggroll-3.jimdosite.com/"+"\n"+"也可以直接去訂購單看看ㄛ！https://docs.google.com/forms/d/e/1FAIpQLScdbpfT8a5uaLut0o7O2kO_N0m9xnrv7O49gVBBdRwMNk16SA/viewform"+"\n"+"我們除了line也有粉專~~"+"\n"+"Ig :https://instagram.com/handmade_eggroll?igshid=12wh42cyy9hlz"+"\n"+"Fb :https://m.facebook.com/ㄟ果肉-The-naivest-手工蛋捲-114153793616901"+"ㄟ果肉蛋捲✖️The Naivest有任何問題都可以直接傳訊息通知我們～～我們都會盡快為你服務呦😙😙")
         line_bot_api.reply_message(event.reply_token, message)
     elif '地址' in msg:
