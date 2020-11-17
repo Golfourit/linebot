@@ -159,6 +159,17 @@ def handle_message(event):
             )
         ]
         line_bot_api.reply_message(event.reply_token, message)
+    #elif '你好帥' in msg:                           還沒修改
+      #  message = [
+         #   TextSendMessage( 
+       #         text="我帥吧！😎好啦你也是🤪"
+        #        ),
+        #    StickerSendMessage(
+         #       package_id='11538',
+         #       sticker_id='51626501'
+          #  )
+       # ]
+        #line_bot_api.reply_message(event.reply_token, message)
 
     #方舟教養會的基本小介紹
     if '方舟' in msg:
