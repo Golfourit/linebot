@@ -96,6 +96,12 @@ def handle_message(event):
     elif '刷卡' in msg:
         message = TextSendMessage(text="我們付款方式有郵匯跟現金付款！"+"\n"+"郵匯的話可以到我們的訂購單看匯款的帳號呦！"+"\n"+"🤤訂購單在這👇https://docs.google.com/forms/d/e/1FAIpQLScdbpfT8a5uaLut0o7O2kO_N0m9xnrv7O49gVBBdRwMNk16SA/viewform")
         line_bot_api.reply_message(event.reply_token, message)
+    elif '付款方式' in msg:
+        message = TextSendMessage(text="我們付款方式有郵匯跟現金付款！"+"\n"+"郵匯的話可以到我們的訂購單看匯款的帳號呦！"+"\n"+"🤤訂購單在這👇https://docs.google.com/forms/d/e/1FAIpQLScdbpfT8a5uaLut0o7O2kO_N0m9xnrv7O49gVBBdRwMNk16SA/viewform")
+        line_bot_api.reply_message(event.reply_token, message)
+    elif '付現方式' in msg:
+        message = TextSendMessage(text="我們付款方式有郵匯跟現金付款！"+"\n"+"郵匯的話可以到我們的訂購單看匯款的帳號呦！"+"\n"+"🤤訂購單在這👇https://docs.google.com/forms/d/e/1FAIpQLScdbpfT8a5uaLut0o7O2kO_N0m9xnrv7O49gVBBdRwMNk16SA/viewform")
+        line_bot_api.reply_message(event.reply_token, message)
     elif '預約' in msg:
         message = TextSendMessage(text="如果你有任何需要提前作業的需求都可以跟我們說～～會盡力滿足你的🥰🥰")
         line_bot_api.reply_message(event.reply_token, message)
@@ -109,7 +115,19 @@ def handle_message(event):
         message = TextSendMessage(text="我們ㄟ果肉蛋捲商店的大本營你們想知道嗎🤣🤣"+"\n"+"目前設立在中原大學-力行宿舍呦！想找我們的可以來看看ㄛ😝😝😝"+"\n"+"https://goo.gl/maps/6B8AyEmgUyvg7jeU7")
         line_bot_api.reply_message(event.reply_token, message)
     elif '價位' in msg:
-        message = TextSendMessage(text="說到這個～～"+"\n"+"ㄟ果肉蛋捲✖️The Naivest 😉\n"+"蛋捲我本人要給你看看我們設計的海報啦！！有包刮價錢、口味、訂購單QRcode!快來看看吧"+"\n"+"可以到我們的訂購單看看～"+"\n"+"🔗https://docs.google.com/forms/d/e/1FAIpQLScdbpfT8a5uaLut0o7O2kO_N0m9xnrv7O49gVBBdRwMNk16SA/viewform"+"\n"+"還有IG.FB呦！"+"\n"+"🔗IG:https://instagram.com/handmade_eggroll?igshid=64g5czfwa23l"+"\n"+"🔗FB:https://m.facebook.com/ㄟ果肉-The-naivest-手工蛋捲-11415379361690")
+        message = [
+            ImageSendMessage(
+            original_content_url="https://i.imgur.com/HVEuKdJ.jpg",
+            preview_image_url="https://i.imgur.com/HVEuKdJ.jpg"
+            ),
+            ImageSendMessage(
+            original_content_url="https://i.imgur.com/B8J7riZ.jpg",
+            preview_image_url="https://i.imgur.com/B8J7riZ.jpg"
+            ),
+            TextSendMessage(
+                text="說到這個～～"+"\n"+"ㄟ果肉蛋捲✖️The Naivest 😉\n"+"蛋捲我本人要給你看看我們設計的海報啦！！有包刮價錢、口味、訂購單QRcode!快來看看吧"+"\n"+"可以到我們的訂購單看看～"+"\n"+"🔗https://docs.google.com/forms/d/e/1FAIpQLScdbpfT8a5uaLut0o7O2kO_N0m9xnrv7O49gVBBdRwMNk16SA/viewform"+"\n"+"還有IG.FB呦！"+"\n"+"🔗IG:https://instagram.com/handmade_eggroll?igshid=64g5czfwa23l"+"\n"+"🔗FB:https://m.facebook.com/ㄟ果肉-The-naivest-手工蛋捲-11415379361690"
+                )
+        ]
         line_bot_api.reply_message(event.reply_token, message)   
     elif '車站' in msg:
         message = TextSendMessage(text="我們ㄟ果肉商店最近的車站就是中壢火車站呦！"+"\n"+"俗話說麻雀雖小，五臟俱全。"+"\n"+"中壢車站常常有人說他很小很醜～但其實他確實蠻重要的一個車站呢！長知識了💪🧠🧠"+"\n"+"Google地圖🔗👇👇"+"\n"+"中壢車站"+"\n"+"https://goo.gl/maps/rB5nPDYyKyKNb6q4A")
