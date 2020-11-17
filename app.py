@@ -90,6 +90,18 @@ def handle_message(event):
         message = TextSendMessage(text="...")
         line_bot_api.reply_message(event.reply_token, message)
 
+    #你好嗎 問候回應
+    if '你好嗎' in msg:
+        message = [
+            TextSendMessage(
+                text="今天還不錯欸！可是少了你🤣"
+                ),
+            StickerSendMessage(
+                package_id='11538 '
+                sticker_id='51626502'
+            )
+        line_bot_api.reply_message(event.reply_token, message)
+
 
     #方舟教養會的基本小介紹
     if '方舟' in msg:
@@ -125,6 +137,7 @@ def handle_message(event):
             )
         ]   
         line_bot_api.reply_message(event.reply_token, message) 
+
     #設定如何和蛋捲君聊天,商店功能
     if  'help' in msg:
         message = TextSendMessage(text="本系統可以自動回覆一般基本疑問。"+"\n"+"稍微複雜的疑問，則會由客服人員為您回覆。"+"\n"+"您可以立即詢問以下問題，例如："+"\n"+"・營業時間？"+"\n"+"・可刷卡嗎？"+"\n"+"・我要預約"+"\n"+"・推薦菜色？"+"\n"+"・店家地址？"+"\n"+"・消費價位？"+"\n"+"・最近車站？"+"\n"+"・店家網站？"+"\n"+"・可吸菸嗎？")
