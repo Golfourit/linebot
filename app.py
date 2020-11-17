@@ -64,6 +64,9 @@ def handle_message(event):
     elif '您好' in msg:
         message = TextSendMessage(text="安安😍😍")
         line_bot_api.reply_message(event.reply_token, message)
+    elif '你好' in msg:
+        message = TextSendMessage(text="安安😍😍")
+        line_bot_api.reply_message(event.reply_token, message)
     elif '午安' in msg:
         message = TextSendMessage(text="安安😍😍")
         line_bot_api.reply_message(event.reply_token, message)
@@ -73,7 +76,21 @@ def handle_message(event):
     elif '早安' in msg:
         message = TextSendMessage(text="安安😍😍")
         line_bot_api.reply_message(event.reply_token, message)
-    
+
+    #🤨回應
+    if '嗨' in msg:
+        message = TextSendMessage(text="🤨怎麼啦～")
+        line_bot_api.reply_message(event.reply_token, message)
+
+    #⋯回應
+    if '.' in msg:
+        message = TextSendMessage(text="...")
+        line_bot_api.reply_message(event.reply_token, message)
+    elif '．' in msg:
+        message = TextSendMessage(text="...")
+        line_bot_api.reply_message(event.reply_token, message)
+
+
     #方舟教養會的基本小介紹
     if '方舟' in msg:
         message = [
