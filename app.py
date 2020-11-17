@@ -50,6 +50,7 @@ def handle_message(event):
     msg = event.message.text 
     if '方舟' in msg:
         message = TextSendMessage(text="__「我要給他們一個終老的家」___"+"\n"+"我們的方舟媽媽謝春蘭女士，為了我們的憨寶貝已經從民國78年忙碌至今了，大家請多多支持阿！！🤗🤗🤗🤗"+"\n"+"如果想做更多公益的也非常歡迎👏到他們官網看更多啦😆😆"+"\n"+"🔗🔗"+"\n"+"https://www.funchao.com.tw/")   
+        line_bot_api.reply_message(event.reply_token, message) 
         message = ImageSendMessage(
             original_content_url="https://imgur.com/a/R9sYMoz",
             preview_image_url="https://imgur.com/a/R9sYMoz"
