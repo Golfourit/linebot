@@ -64,7 +64,17 @@ def handle_message(event):
     elif '您好' in msg:
         message = TextSendMessage(text="安安😍😍")
         line_bot_api.reply_message(event.reply_token, message)
-    
+    elif '你好嗎' in msg:                              #問候與打招呼相重疊，需放前面判斷
+        message = [
+            TextSendMessage(
+                text="今天還不錯欸！可是少了你🤣"
+                ),
+            StickerSendMessage(
+                package_id='11538',
+                sticker_id='51626502'
+            )
+        ]
+        line_bot_api.reply_message(event.reply_token, message)
     elif '你好' in msg:
         message = TextSendMessage(text="安安😍😍")
         line_bot_api.reply_message(event.reply_token, message)
@@ -103,17 +113,17 @@ def handle_message(event):
             )
         ]
         line_bot_api.reply_message(event.reply_token, message)
-    elif '你好嗎' in msg:
-        message = [
-            TextSendMessage(
-                text="今天還不錯欸！可是少了你🤣"
-                ),
-            StickerSendMessage(
-                package_id='11538',
-                sticker_id='51626502'
-            )
-        ]
-        line_bot_api.reply_message(event.reply_token, message)
+    #elif '你好嗎' in msg:                              在打招呼那邊一起判斷
+    #    message = [
+    #        TextSendMessage(
+    #           text="今天還不錯欸！可是少了你🤣"
+    #            ),
+    #       StickerSendMessage(
+    #            package_id='11538',
+    #            sticker_id='51626502'
+    #        )
+    #    ]
+    #    line_bot_api.reply_message(event.reply_token, message)
     elif '還好嗎' in msg:
         message = [
             TextSendMessage(
