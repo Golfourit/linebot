@@ -48,6 +48,33 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text 
+    #打招呼
+    if '嗨' in msg:
+        message = TextSendMessage(text="安安😍😍")
+        line_bot_api.reply_message(event.reply_token, message)
+    elif '安' in msg:
+        message = TextSendMessage(text="安安😍😍")
+        line_bot_api.reply_message(event.reply_token, message)
+    elif '在嗎' in msg:
+        message = TextSendMessage(text="安安😍😍")
+        line_bot_api.reply_message(event.reply_token, message)
+    elif '早' in msg:
+        message = TextSendMessage(text="安安😍😍")
+        line_bot_api.reply_message(event.reply_token, message)
+    elif '您好' in msg:
+        message = TextSendMessage(text="安安😍😍")
+        line_bot_api.reply_message(event.reply_token, message)
+    elif '午安' in msg:
+        message = TextSendMessage(text="安安😍😍")
+        line_bot_api.reply_message(event.reply_token, message)
+    elif '晚安' in msg:
+        message = TextSendMessage(text="安安😍😍")
+        line_bot_api.reply_message(event.reply_token, message)
+    elif '早安' in msg:
+        message = TextSendMessage(text="安安😍😍")
+        line_bot_api.reply_message(event.reply_token, message)
+    
+    #方舟教養會的基本小介紹
     if '方舟' in msg:
         message = [
             TextSendMessage(
@@ -80,8 +107,9 @@ def handle_message(event):
                 preview_image_url="https://i.imgur.com/JQmusAr.jpg"
             )
         ]   
-        line_bot_api.reply_message(event.reply_token, message)  
-    elif  'help' in msg:
+        line_bot_api.reply_message(event.reply_token, message) 
+    #設定如何和蛋捲君聊天,商店功能
+    if  'help' in msg:
         message = TextSendMessage(text="本系統可以自動回覆一般基本疑問。"+"\n"+"稍微複雜的疑問，則會由客服人員為您回覆。"+"\n"+"您可以立即詢問以下問題，例如："+"\n"+"・營業時間？"+"\n"+"・可刷卡嗎？"+"\n"+"・我要預約"+"\n"+"・推薦菜色？"+"\n"+"・店家地址？"+"\n"+"・消費價位？"+"\n"+"・最近車站？"+"\n"+"・店家網站？"+"\n"+"・可吸菸嗎？")
         line_bot_api.reply_message(event.reply_token, message)
     elif  '設定' in msg:
@@ -176,7 +204,8 @@ def handle_message(event):
     elif '吸菸' in msg:
         message = TextSendMessage(text="吸菸傷身又不環保"+"不如來吃蛋捲吧！好吃😋又便宜！"+"\n"+"心動不如馬上行動！😝😝")
         line_bot_api.reply_message(event.reply_token, message)  
-    elif '掰' in msg:
+    #道別
+    if '掰' in msg:
         message = TextSendMessage(text="掰掰👋記得有空回來找我喔～～")
         line_bot_api.reply_message(event.reply_token, message)  
     elif '8' in msg:
