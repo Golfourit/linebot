@@ -1,5 +1,9 @@
 from flask import Flask, request, abort
 
+#======這裡是匯入資料庫=====
+from firebase import firebase
+    key="a2skmCUlb9oTmFJoNqW4AWlO2UUgdGOib3m1SrCt"
+
 from linebot import (
     LineBotApi, WebhookHandler
 )
