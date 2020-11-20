@@ -2,8 +2,8 @@ from flask import Flask, request, abort
 
 #======這裡是匯入資料庫=====
 from firebase import firebase
-#fdb = firebase.FirebaseApplication(\
-#   "https://eggrollbot-firebase.firebaseio.com", None)
+fdb = firebase.FirebaseApplication(\
+   "https://eggrollbot-firebase.firebaseio.com", None)
 #======這裡是匯入資料庫=====
 
 from linebot import (
