@@ -1,10 +1,6 @@
 from flask import Flask, request, abort
 
-#======這裡是匯入資料庫=====
-#from firebase import firebase
-#fdb = firebase.FirebaseApplication(\
-#   "https://eggrollbot-firebase.firebaseio.com", None)
-#======這裡是匯入資料庫=====
+
 
 from linebot import (
     LineBotApi, WebhookHandler
@@ -26,6 +22,12 @@ import tempfile, os
 import datetime
 import time
 #======python的函數庫==========
+
+#======這裡是匯入資料庫=====
+from firebase import firebase
+fdb = firebase.FirebaseApplication(\
+   "https://eggrollbot-firebase.firebaseio.com", None)
+#======這裡是匯入資料庫=====
 
 app = Flask(__name__)
 static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
