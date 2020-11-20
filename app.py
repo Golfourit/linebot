@@ -24,8 +24,11 @@ import time
 #======python的函數庫==========
 
 #======這裡是匯入資料庫=====
-from firebase import firebase
-fdb = firebase.FirebaseApplication(\"https://eggrollbot-firebase.firebaseio.com", None)
+import firebase_admin 
+from firebase_admin import credentials 
+#from firebase import firebase
+#fdb = firebase.FirebaseApplication(\
+ #   "https://eggrollbot-firebase.firebaseio.com", None)
 #======這裡是匯入資料庫=====
 
 app = Flask(__name__)
