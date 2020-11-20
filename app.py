@@ -1,7 +1,7 @@
 from flask import Flask, request, abort
 
 #======這裡是匯入資料庫=====
-from firebase import firebase
+#from firebase import firebase
     #key="a2skmCUlb9oTmFJoNqW4AWlO2UUgdGOib3m1SrCt"
    #ㄐ authentication = firebase.FirebaseAuthentication(key,'h1253567@gmail.com')#這邊是要填入身分驗證，需要資料庫密鑰和google資料庫擁有者帳號
 
