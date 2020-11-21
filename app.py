@@ -1,7 +1,5 @@
 from flask import Flask, request, abort
 
-
-
 from linebot import (
     LineBotApi, WebhookHandler
 )
@@ -9,7 +7,6 @@ from linebot.exceptions import (
     InvalidSignatureError
 )
 from linebot.models import *
-
 
 #======這裡是呼叫的檔案內容=====
 from message import *
@@ -339,6 +336,7 @@ def handle_message(event):
     elif '吸菸' in msg:
         message = TextSendMessage(text="吸菸傷身又不環保"+"不如來吃蛋捲吧！好吃😋又便宜！"+"\n"+"心動不如馬上行動！😝😝")
         line_bot_api.reply_message(event.reply_token, message)  
+        
     #道別
     if '掰' in msg:
         message = TextSendMessage(text="掰掰👋記得有空回來找我喔～～")
