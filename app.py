@@ -25,7 +25,8 @@ import time
 from firebase import firebase
 students = [{"no":1 , "name":"李天龍"},
 {"no":2 , "name":"高藝人"},
-{"no":3 , "name":"宏大同"},           
+{"no":3 , "name":"宏大同"},   
+{"no":4 , "name":"哈哈哈"}        
 ]
 url = "https://eggrollbase.firebaseio.com/"
 fb = firebase.FirebaseApplication(url, None)
