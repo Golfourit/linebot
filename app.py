@@ -22,8 +22,7 @@ import time
 
 #======這裡是匯入資料庫=====
 #import firebase_admin 
-#from firebase import firebase
-
+from firebase import firebase
 #url= "https://eggrollbot-firebase.firebaseio.com/"
 #fdb = firebase.FirebaseApplication(url, None)
 #======這裡是匯入資料庫=====
