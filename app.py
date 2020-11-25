@@ -12,6 +12,8 @@ from linebot.models import *
 from message import *
 from new import *
 from Function import *
+from DataBase import *
+from DataBaseGet import *
 #======這裡是呼叫的檔案內容=====
 
 #======python的函數庫==========
@@ -22,7 +24,7 @@ import time
 
 #======這裡是匯入資料庫=====
 #import firebase_admin 
-from firebase import firebase
+#from firebase import firebase
 #students = [{"no":1 , "name":"李天龍"},
 #{"no":2 , "name":"高藝人"},
 #{"no":3 , "name":"宏大同"},   
